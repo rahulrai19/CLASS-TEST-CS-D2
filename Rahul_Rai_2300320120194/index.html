@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Light Bulb App</title>
+</head>
+<body>
+    <div class="container">
+        <button id="startButton">Start</button>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Enter Number of Bulbs</h2>
+                <input type="range" id="numBulbs" min="1" max="10" value="4">
+                <p>Number of Bulbs: <span id="bulbCount">4</span></p>
+                
+                <!-- Checkbox -->
+                <label for="extraFeature"><h2>Turn for Extra Feature <h2></label>
+                <input type="checkbox" id="extraFeature" name="extraFeature">
+                <div><button id="doneButton">Done</button></div>
+                
+                 </div>
+            
+        </div>
+
+        <div id="bulbContainer"></div>
+        <button id="resetButton">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
